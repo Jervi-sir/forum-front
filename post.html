@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="css/post.css">
+    <title>Post</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div id="header">
+
+    </div>
+    <main class="up">
+        <form class="edit-container">
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button type="button" class="edit active">Edit</button>
+                    <div class="vertical-line"></div>
+                    <button type="button" class="preview">Preview</button>
+                </div>
+            </div>
+            <div class="image">
+                <label for="cover">Add a cover image</label>
+                <input type="file" id="cover" name="img" accept="image/*">
+            </div>
+            <div class="title-tags">
+                <input type="text" class="title" placeholder="Title">
+                <input type="text" class="tags" placeholder="add tags..">
+            </div>
+            <div class="content">
+                <textarea name="" id="" cols="100%" rows="10" placeholder="Write your post here ..."></textarea>
+            </div>
+        </form>
+        <div class="actions">
+            <button class="pubilc">
+                Publish
+            </button>
+            <button class="draft">
+                Save draft
+            </button>
+        </div>
+    </main>
+</body>
+</html>

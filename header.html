@@ -1,0 +1,66 @@
+<header>
+    <div class="logo">
+        <img src="images/Logo.svg" alt="">
+        <span>Dev dz</span>
+    </div>
+    <div class="search">
+        <div class="container">
+            <input type="text" placeholder="Search...">
+            <img src="images/search.svg" alt="">
+        </div>
+    </div>
+    <div class="action">
+        <a class="button dark-blue" href="">
+            Create Account
+        </a>
+        <a class="login-link" href="">
+            Log in
+        </a>
+    </div>
+    <div class="wrapper-menu">
+        <div class="line-menu half start"></div>
+        <div class="line-menu"></div>
+        <div class="line-menu half end"></div>
+    </div>
+</header>
+
+<div class="menu-mobile transition-up">
+    <div class="search-mobile">
+        <input type="text" placeholder="Search...">
+        <img src="images/search.svg" alt="">
+    </div>
+    <div class="row">
+        <a href="">Create an Account</a>
+    </div>
+    <div class="row">
+        <a href="">Home</a>
+        <span> / </span>
+        <a href="">Videos</a>
+    </div>
+    <div class="row">
+        <a href="">About</a>
+        <span> / </span>
+        <a href="">Contact</a>
+    </div>
+
+</div>
+
+<script>
+    var wrapperMenu = document.querySelector('.wrapper-menu');
+    var elem = document.querySelector(".menu-mobile");
+    var main = document.querySelector("main");
+
+    wrapperMenu.addEventListener('click', function(){
+        wrapperMenu.classList.toggle('open');  
+        elem.classList.toggle('transition-up');  
+        main.classList.toggle('up');  
+        /*
+        if(wrapperMenu.classList.contains("open")) {
+            document.body.style.overflow = 'hidden';
+        }
+        else {
+            document.body.style.overflow = 'auto';
+        }
+        */
+    })
+</script>

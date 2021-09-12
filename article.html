@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="css/article.css">
+    <title>Article</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+        });
+    </script> 
+</head>
+<body>
+    <div id="header">
+
+    </div>
+    <main class="up">
+        <div class="post">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="container">
+                <div class="stats">
+                    <ul>
+                        <li><a href="">
+                            <img src="images/heart.svg" class="not-small" alt=""></a> 
+                            <img src="images/heartSmall.svg" class="small" alt=""></a> 
+                            <span>0</span>
+                        </li>
+                        <li><a href="">
+                            <img src="images/comment.svg" class="not-small" alt=""></a> 
+                            <img src="images/commentSmall.svg" class="small" alt=""></a> 
+                            <span>0</span>
+                        </li>
+                        <li><a href="">
+                            <img src="images/save.svg" class="not-small" alt=""></a> 
+                            <img src="images/saveSmall.svg" class="small" alt=""></a> 
+                            <span>0</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <h1>Title</h1>
+                    <div class="details">
+                        <img src="images/profile.svg" alt="">
+                        <span>Username</span>
+                        <span>Sep 12</span>
+                        <div class="buttons">
+                            <button  class="edit">edit</button>
+                            <button  class="delete">delete</button>
+                        </div>
+                    </div>
+                    <div class="body-content">
+
+                    </div>
+                    <div class="comments">
+                        <h3>Discussion { <span>0</span> }</h3>
+                        <div class="card">
+                            <div class="user-image">
+                                <img src="images/profile.svg" alt="">
+                            </div>
+                            <div class="comment">
+                                <textarea name="" id="" rows="10" placeholder="Add to the discussion"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="author">
+                <div class="detail">
+                    <img src="images/profile.svg" alt="">
+                    <div class="name">Jervi</div>
+                </div>
+                <div class="bio">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti aliquid accusan
+                </div>
+                <div class="location">
+                    <span>Location</span>
+                    <p>
+                        Bruh location
+                    </p>
+                </div>
+                <div class="works">
+                    <span>Works</span>
+                    <p>
+                        Bruh works
+                    </p>
+                </div>
+                <div class="joined">
+                    <span>Joined</span>
+                    <p>
+                        March 23, 2021
+                    </p>
+                </div>
+                <div class="follow">
+                    <button>
+                        Follow
+                    </button>
+                </div>
+            </div>
+            <div class="trending">
+                <h4>Trending <span>Community</span> </h4>
+                <div class="item">
+                    <div class="image">
+                        <img src="images/profile.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="title">TitleTitleTitleTitle</div>
+                        <div class="tags">js, python</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="images/profile.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="title">TitleTitleTitleTitle</div>
+                        <div class="tags">js, python</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="images/profile.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="title">TitleTitleTitleTitle</div>
+                        <div class="tags">js, python</div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="image">
+                        <img src="images/profile.svg" alt="">
+                    </div>
+                    <div class="details">
+                        <div class="title">TitleTitleTitleTitle</div>
+                        <div class="tags">js, python</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
